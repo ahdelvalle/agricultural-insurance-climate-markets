@@ -1,0 +1,279 @@
+# Data Sources - Complete Reference List
+
+This file provides direct URLs and access information for all data sources used in this study.
+
+## Agricultural Price Data
+
+### Canada - Ontario
+
+**1. International Prices (FRED)**
+- Source: Federal Reserve Bank of St. Louis
+- Dataset: Global Price of Corn
+- URL: https://fred.stlouisfed.org/series/PMAIZMTUSDM
+- Format: Monthly, USD per metric ton
+- Access: Public, free download
+- Coverage: 1990-present
+
+**2. Exchange Rates**
+- Source: Bank of Canada
+- Dataset: USD/CAD Exchange Rate
+- URL: https://www.bankofcanada.ca/valet/observations/FXUSDCAD
+- API: https://www.bankofcanada.ca/valet/docs
+- Format: Daily, can aggregate to monthly
+- Access: Public, free API access
+
+**3. Farm-Gate Prices**
+- Source: Grain Farmers of Ontario
+- URL: https://gfo.ca/marketing/
+- Backup: Ontario Ministry of Agriculture, Food and Rural Affairs (OMAFRA)
+- URL: https://data.ontario.ca
+- Format: Monthly reports
+- Access: Public
+
+### Mexico
+
+**4. SNIIM (Sistema Nacional de Información e Integración de Mercados)**
+- Agency: Secretaría de Economía
+- URL: http://www.economia-sniim.gob.mx/
+- Coverage: Jalisco, Sinaloa (and other states)
+- Format: Web portal, requires manual extraction or web scraping
+- Access: Free registration required
+- Data availability: 1990s-present (varies by market)
+
+### Brazil
+
+**5. LAMFO Data**
+- Institution: Laboratório de Aprendizado de Máquina em Finanças e Organizações
+- University: Universidade de Brasília (UnB)
+- Contact: Prof. Herbert Kimura
+- Email: hkimura@unb.br
+- URL: http://www.lamfo.unb.br/
+- Coverage: Goiás, Mato Grosso
+- Access: Available upon reasonable request, subject to institutional data sharing agreements
+- Format: Processed CSV files
+
+## Climate Data
+
+### Canada
+
+**6. Environment and Climate Change Canada**
+- Agency: Environment and Climate Change Canada
+- Portal: Historical Climate Data
+- URL: https://climate.weather.gc.ca/
+- Station Search: https://climate.weather.gc.ca/historical_data/search_historic_data_e.html
+- Primary Station: Ottawa Macdonald-Cartier Airport
+  - Station ID: 4333
+  - WMO ID: 71628
+  - Coordinates: 45.32°N, 75.67°W
+- Format: CSV download
+- Access: Public, Open Government License
+- Coverage: 1889-present (varies by station and variable)
+
+**7. GHCN-Daily (Alternative Source)**
+- Agency: NOAA National Centers for Environmental Information
+- URL: https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily
+- Station: CA006106000 (Ottawa Airport)
+- Access: Public, free download
+- Format: CSV or API
+
+### Mexico
+
+**8. CONAGUA (Comisión Nacional del Agua)**
+- Agency: Comisión Nacional del Agua
+- Parent: SEMARNAT (Secretaría de Medio Ambiente y Recursos Naturales)
+- Portal: Sistema de Información Climatológica Integral (SICI)
+- URL: https://smn.conagua.gob.mx/es/climatologia/informacion-climatologica
+- Access: Public registration required
+- Coverage: ~5,000 stations nationwide
+- Format: Web portal, Excel exports
+- Study used: 415 stations in corn-growing regions
+
+**9. CLICOM (Alternative Mexico Source)**
+- System: CLICOM (CLImate COMputing)
+- Operated by: Mexican National Weather Service
+- Access: Through CONAGUA portal
+- Format: Database exports
+
+### Brazil
+
+**10. INMET (Instituto Nacional de Meteorologia)**
+- Agency: Instituto Nacional de Meteorologia
+- Parent: Ministério da Agricultura, Pecuária e Abastecimento
+- Portal: Banco de Dados Meteorológicos (BDMEP)
+- URL: https://bdmep.inmet.gov.br/
+- Alternative: https://portal.inmet.gov.br/
+- Coverage: 
+  - Goiás: 39 stations
+  - Mato Grosso: 33 stations
+- Access: Public with registration
+- Format: CSV download
+- Study period: 2002-2024
+
+## Insurance Data
+
+### Canada
+
+**11. Agriculture and Agri-Food Canada (AAFC)**
+- Agency: Agriculture and Agri-Food Canada / Agriculture et Agroalimentaire Canada
+- Program: AgriInsurance
+- URL: https://agriculture.canada.ca/
+- Reports: Annual reports and statistical bulletins
+- Specific data: https://agriculture.canada.ca/en/programs-and-services/agriinsurance
+- Access: Public, annual reports downloadable
+- Coverage: 2005-2023 (data through 2022 used in study)
+
+**12. Provincial Crop Insurance Reports**
+- Saskatchewan: https://www.scic.ca/
+- Alberta: https://afsc.ca/
+- Manitoba: https://www.masc.mb.ca/
+- Access: Public annual reports
+
+## Reference Data
+
+### Exchange Rates (Additional)
+
+**13. Federal Reserve Economic Data (FRED) - Exchange Rates**
+- URL: https://fred.stlouisfed.org/series/DEXCAUS
+- Coverage: Daily USD/CAD rates
+- Access: Public, free download
+
+### Inflation / CPI Data
+
+**14. Statistics Canada - Consumer Price Index**
+- URL: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000401
+- Used for: Deflating Ontario farm-gate prices to 2012 CAD
+- Access: Public
+
+**15. INEGI (Mexico) - Consumer Price Index**
+- URL: https://www.inegi.org.mx/temas/inpc/
+- Access: Public
+
+**16. IBGE (Brazil) - Consumer Price Index (IPCA)**
+- URL: https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9256-indice-nacional-de-precos-ao-consumidor-amplo.html
+- Access: Public
+
+## Commodity Index Data
+
+### Financial Market Integration
+
+**17. S&P GSCI (Goldman Sachs Commodity Index)**
+- Provider: S&P Dow Jones Indices
+- URL: https://www.spglobal.com/spdji/en/indices/commodities/sp-gsci/
+- Note: Corn heavily weighted in index
+- Access: Index composition public, historical data may require subscription
+
+**18. Bloomberg Commodity Index (BCOM)**
+- Provider: Bloomberg L.P.
+- URL: https://www.bloomberg.com/professional/product/indices/bloomberg-commodity-index-family/
+- Note: Corn included since index inception
+- Access: Requires Bloomberg Terminal subscription
+
+## Policy and Institutional Data
+
+### Brazil
+
+**19. CONAB (Companhia Nacional de Abastecimento)**
+- Agency: Companhia Nacional de Abastecimento
+- URL: https://www.conab.gov.br/
+- Reports: Minimum price policies, strategic reserves, intervention purchases
+- Access: Public reports and bulletins
+
+### Mexico
+
+**20. ASERCA (Apoyos y Servicios a la Comercialización Agropecuaria)**
+- Agency: Apoyos y Servicios a la Comercialización Agropecuaria
+- Parent: SADER (Secretaría de Agricultura y Desarrollo Rural)
+- URL: https://www.gob.mx/aserca
+- Access: Public policy documents
+
+**21. SEGALMEX**
+- Agency: Seguridad Alimentaria Mexicana
+- URL: https://www.gob.mx/segalmex
+- Note: Replaced ASERCA in 2019
+- Access: Public reports
+
+### United States
+
+**22. USDA Economic Research Service**
+- URL: https://www.ers.usda.gov/
+- Relevant reports: Biofuel mandates, agricultural policy
+- Access: Public
+
+**23. U.S. Energy Information Administration**
+- URL: https://www.eia.gov/
+- Relevant data: Ethanol production, renewable fuel standards
+- Access: Public
+
+## Academic and Research Data
+
+**24. NOAA GHCN (Global Historical Climatology Network)**
+- URL: https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-monthly
+- Access: Public
+- Format: FTP or API
+
+**25. World Bank Commodity Price Data**
+- URL: https://www.worldbank.org/en/research/commodity-markets
+- Access: Public, quarterly updates
+- Format: Excel downloads
+
+## Data Access Summary
+
+| Source | Public | Registration | Request | Subscription |
+|--------|--------|--------------|---------|--------------|
+| FRED | ✓ | | | |
+| Bank of Canada | ✓ | | | |
+| Grain Farmers Ontario | ✓ | | | |
+| SNIIM (Mexico) | | ✓ | | |
+| LAMFO (Brazil) | | | ✓ | |
+| Environment Canada | ✓ | | | |
+| CONAGUA (Mexico) | | ✓ | | |
+| INMET (Brazil) | | ✓ | | |
+| AAFC (Canada) | ✓ | | | |
+| S&P GSCI | Partial | | | ✓ (historical) |
+| Bloomberg | | | | ✓ |
+
+## Data Processing Tools
+
+The following open-source tools were used for data collection and processing:
+
+1. **R packages**:
+   - `tidyverse` for data manipulation
+   - `lubridate` for date handling
+   - `SPEI` for SPI calculation
+   - `httr` and `rvest` for web scraping
+
+2. **Python packages**:
+   - `pandas` for data manipulation
+   - `requests` and `beautifulsoup4` for web scraping
+   - `scipy` for statistical calculations
+
+3. **APIs**:
+   - Bank of Canada Valet API (https://www.bankofcanada.ca/valet/docs)
+   - FRED API (requires free API key)
+
+## Citation Information
+
+When using data from these sources, please cite appropriately:
+
+- **FRED data**: Federal Reserve Bank of St. Louis, Global Price of Corn [PMAIZMTUSDM], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/PMAIZMTUSDM
+- **Environment Canada**: Environment and Climate Change Canada. Historical Climate Data. Retrieved from https://climate.weather.gc.ca/
+- **LAMFO**: Processed data available from Prof. Herbert Kimura, LAMFO, University of Brasilia (hkimura@unb.br)
+
+## Contact for Data Access
+
+- **Canadian data**: Direct from public sources (URLs above)
+- **Mexican data**: SNIIM portal (registration) or contact author for processed data
+- **Brazilian data**: Prof. Herbert Kimura (hkimura@unb.br)
+- **Processed datasets**: This GitHub repository (MIT License)
+- **Questions**: Adrian Hernandez-del-Valle (ahdelvalle@gmail.com)
+
+## Last Updated
+
+November 2025
+
+## Notes
+
+- All URLs were verified as functional in November 2025
+- Some data portals require registration but are free to access
+- Brazilian raw data subject to institutional data sharing agreements
+- Processed versions of all data available in this repository under MIT License

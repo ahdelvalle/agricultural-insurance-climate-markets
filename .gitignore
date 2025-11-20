@@ -1,0 +1,72 @@
+# R files
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
+
+# Python files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files (large files should not be in git)
+*.rds
+*.RData
+*.feather
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Sensitive information
+*password*
+*credentials*
+*.env
+.env.local
+
+# Microsoft Office temporary files
+~$*.doc*
+~$*.xls*
+~$*.ppt*
+
+# Large output files
+*.pdf
+*.eps
+*.tiff
+*.ai
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs
+*.log
+logs/
+
+# Compiled files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Package files
+*.tar.gz
+*.zip
+*.7z
